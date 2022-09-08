@@ -1,0 +1,58 @@
+@mixin social-media{
+    a{
+        svg{
+            margin: 10px 10px 10px 10px;
+            color: $primary-fcolor;
+            font-size: 20px;
+        }
+        &:first-child{
+            svg{
+                &:hover{
+                    color: #1771E6;
+                    
+                }
+            }
+        }
+        &:last-child{
+            svg{
+                &:hover{
+                    color: #29c5f6;
+                }
+            }
+        }
+}
+}
+
+.footer{
+    text-align: center;
+    padding: 50px;
+    color: $primary-fcolor;
+    background-color: $sec-fcolor;
+    
+    .footer-links{
+        span{
+            padding: 0px 10px;
+            border-right: solid 1px $primary-fcolor;
+            
+            a{
+                color: $primary-fcolor;
+                &:hover{
+                    color: $third-fcolor;
+                }
+            }
+            
+            &:last-child{
+                border: none;
+                
+            }
+        }
+    }
+    
+    
+    .social-media{
+        @include social-media()
+    }
+    &:last-child{
+        color: $sixth-fcolor;
+    }
+}

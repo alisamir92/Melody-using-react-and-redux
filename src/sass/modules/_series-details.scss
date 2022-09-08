@@ -1,0 +1,90 @@
+.series-details{
+    max-width: 100%;
+    padding: 0.5% 2% 0.5% 2%;
+    .col-lg-3{
+        .episode_options{
+            @media (max-width: $laptop) {
+                
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            a{
+                color: $primary-fcolor;
+                margin-right: 10px;
+                &:hover{
+                    color: $third-fcolor;
+                }
+            }
+        }
+    }
+    .col-lg-6{
+        h1{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        img{
+            margin-bottom: 0px;
+        }
+        div{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: $sixth-fcolor;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .social-media{
+            @include social-media();
+            >a{
+                border: 1px solid $fourth-fcolor;
+                margin-right: 20px;
+                border-radius: 50%;
+                &:first-child{
+
+                    padding: 20px 8px 0px 8px;
+                }
+                &:last-child{
+
+                    padding: 20px 6px 0px 6px;
+                }                
+                >svg{
+                    
+                    color: $fourth-fcolor;
+                    font-size: 15px;
+                }
+            }
+        }
+        .series_crew{
+            .col-lg-6{
+                @media (max-width:$laptop) {
+                    margin: 0px;
+                }
+                h4{
+                    color: $primary-fcolor;
+                    font-size: 16px;
+                    margin-top: 15px;
+                }
+                .row{
+                    padding: 0px;
+                    margin: 0px;
+                    .pColor{
+                        color: $primary-fcolor;
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                    .sColor{
+                        color: $sixth-fcolor;
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

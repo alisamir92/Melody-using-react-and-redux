@@ -1,0 +1,100 @@
+@import "./footer";
+@import "../mixins/button";
+.movie-details{
+    @media (min-width : $laptop) {
+        
+        margin: 20px;
+    }
+    
+    .col-lg-7{
+        .figure{
+            @media (min-width: $laptop) {
+                padding-left: 0%;
+                
+            }
+        }
+        .movie_crew{
+            margin-top: 25px;
+            
+        }
+        .col-lg-4{
+            font-size: 10px;
+            @media (min-width: $laptop) {
+                padding-left: 0px;
+            }
+            h4{
+                font-size: 14px;
+                font-weight: bolder;
+            }
+        }
+        
+        .pColor{
+            color: $primary-fcolor;
+        }
+        .sColor{
+            color: $sixth-fcolor;
+        }
+    }
+    .col-lg-5{
+        @media (min-width: $laptop) {
+            padding-left: 0%;
+            
+            padding-left: 60px;
+        }
+        h1{
+            font-size: 25px;
+        }
+        div{
+            color: $sixth-fcolor;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .btn{
+            width: 90px;
+            height: 25px;
+            background-color: $fourth-fcolor;
+            position: relative;
+            color: $fifth-fcolor;
+            border-radius: 0%;
+            line-height: 1.5;
+            font-size: 10px;
+            letter-spacing: 2px;
+            margin-right: 15px;
+            margin-bottom: 30px;
+            >svg{
+                font-size: 15px;
+                font-weight: bolder;
+                position: absolute;
+                left: 5%;
+                top: 20%;
+            }
+            >span{
+                position: absolute;
+                right: 15%;
+                top: 20%;
+            }
+        }
+        .social-media{
+            @include social-media();
+            >a{
+                border: 1px solid $fourth-fcolor;
+                margin-right: 20px;
+                border-radius: 50%;
+                &:first-child{
+
+                    padding: 20px 8px 0px 8px;
+                }
+                &:last-child{
+
+                    padding: 20px 6px 0px 6px;
+                }
+                >svg{
+                    color: $fourth-fcolor;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+

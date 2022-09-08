@@ -1,0 +1,15 @@
+@import "../mixins/button";
+
+@mixin hidden_buttons {
+    opacity: 0.0;
+    color: $primary-fcolor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    .nav-link{color: $primary-fcolor;}
+    .btn{
+        @include button();
+    }
+    }

@@ -1,0 +1,93 @@
+@import "../mixins/hidden-buttons";
+    
+
+
+.home-main-slider{
+    color: $primary-fcolor;
+    .slider-item{
+
+        text-align: center;
+        position: relative;
+        
+    }
+    .slick-next{
+        right: 10px;
+        font-size: 80px;
+        color: $primary-fcolor;
+        z-index: 2;
+        &:hover{
+
+            color: $primary-fcolor;
+        }
+        
+    }
+    .slick-prev{
+        left: 10px;
+        font-size: 80px;
+        color: $primary-fcolor;
+        z-index: 2;
+        &:hover{
+
+            color: $primary-fcolor;
+        }
+    }
+    .slider-item{
+
+        .hidden-buttons{
+            @include hidden_buttons()
+        }
+        &:hover{
+            .hidden-buttons{
+    
+                opacity: 1.0;
+            }
+        }
+    }
+}
+
+.main-page-sliders{
+    @extend .home-main-slider;
+    @media (min-width: $tablet) {
+        
+        margin: 0.5% 0.5% 0.5% 0.5%;
+    };
+    h4, h3{
+        
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    h4{
+        color: $sixth-fcolor;
+        font-weight: bold;
+    }
+    .slick-next{
+        right: -1px;
+        top: 44%;
+        font-size: 80px;
+        opacity: 0.5;
+        height: 203px;
+        width: 50px;
+        &:hover{
+            background-color: $sec-fcolor;
+        }
+        
+    }
+    .slick-prev{
+        left: -1px;
+        top: 44%;
+        font-size: 80px;
+        opacity: 0.5;
+        height: 203px;
+        width: 50px;
+        &:hover{
+            background-color: $sec-fcolor;
+        }
+    }
+    
+    .slider-item{
+       margin: 1px;
+    }
+    
+}
+
+

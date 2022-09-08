@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-input-placeholder { 
+  color: $primary-fcolor;
+}
+*::-moz-placeholder { 
+  color: $primary-fcolor;
+}
+*:-ms-input-placeholder { 
+  color: $primary-fcolor;
+}
+*:-moz-placeholder { 
+  color: $primary-fcolor;
+}
+ul{
+  list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+	background-color: $body-bk;
+	font-family: $main-font;
+}
+.root{
+  padding: 0px 0px;
+}
+

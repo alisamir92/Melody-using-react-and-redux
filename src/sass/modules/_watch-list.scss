@@ -1,0 +1,33 @@
+@import "../mixins/button";
+
+.no-list{
+    text-align: center;
+    font-size: 25px;
+}
+
+.watch-list{
+    text-align: center;
+    border: 1px solid $sixth-fcolor;
+    padding: 2%;
+    margin: 5px;
+    .col{
+        @media (min-width: $tablet) {
+            
+            padding: 6%;
+        }
+        color: $fourth-fcolor;
+    }
+    .btn{
+        @include button();
+        width: 100px;
+        margin-right: 5px;
+        .remove-icon{
+            left: 7%;
+        }
+        a{
+            color: $fifth-fcolor;
+            padding: 0px;
+            
+        }
+    }
+}

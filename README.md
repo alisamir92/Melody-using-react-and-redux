@@ -1,6 +1,21 @@
 # Getting Started with Create React App and Redux
 The app is deployed on Netlify [https://melodyf.netlify.app/]
 
+# Features
+
+- A Movies App from scratch based on dummy movies data.
+- Focus more on functional components.
+
+# Technologies
+
+- [React](https://reactjs.org/)
+- [React-Redux](https://react-redux.js.org/)
+- [Redux-toolkit](https://redux-toolkit.js.org/)
+- [SASS](https://sass-lang.com/)
+- [React-Bootstrap](https://react-bootstrap.github.io/)
+
+Check [`package.json`](./package.json) file for more information.
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
